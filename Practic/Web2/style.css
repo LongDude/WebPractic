@@ -1,0 +1,59 @@
+p {
+
+    color: red;
+    border: 2px solid blue;
+    border-radius: 20px;
+    margin-left: 100;
+    margin-right: 100;
+    padding: 5px;
+    text-align: center;
+}
+
+.pi {
+    color: blue;
+}   
+
+#unify {
+    color: aqua;
+    background-color: linear-gradient(90deg, red, rgb(0, 255, 30));
+    background: linear-gradient(45deg, red, rgb(33, 235, 11));
+}
+
+
+body {
+    margin-top: 15px;
+
+}
+
+h1 {
+    font-family: "Inconsolata", sans-serif;
+    color: #FF6F35;
+    text-shadow: 4px 5px 5px limegreen;
+    text-align: center;
+}
+
+.container {
+    background: linear-gradient(45deg, white, blue);
+    width: 1200px;
+    height: 1000px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: stretch; */
+    flex-direction: row-reverse;
+}
+
+.class1 {
+    background: linear-gradient(5deg, white, green 5%, yellow -5%);
+    width: 100px;
+    height: 100px;
+}
+.class2 {
+    background: linear-gradient(0deg, white, green, yellow);
+    width: 100px;
+    height: 100px;
+}
+.class3 {
+    background: linear-gradient(-5deg, white, green, yellow);
+    width: 100px;
+    height: 100px;
+}
