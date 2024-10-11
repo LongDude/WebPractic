@@ -1,0 +1,11 @@
+.container {
+    display: grid;
+    grid-template-columns: 20px 20%;
+}
+
+.container * {
+    border: 1px dashed;
+    border-radius: 10px;
+    background-color: blue;
+    text-align: center;
+}
