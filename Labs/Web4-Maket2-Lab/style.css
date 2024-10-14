@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: "Jura", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.39px;
+    text-align: left;
+    height: 100vh;
+}
+
+header {
+    display: grid;
+
+    grid-template-columns: 200px 1fr 2fr;
+
+    margin: 56px;
+    margin-left: 108px;
+    margin-right: 108px;
+    margin-bottom: 71px;
+
+    font-family: "Jura", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+header nav {
+    display: grid;
+    grid-column: 3 / -1;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+header p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+header h4 {
+    margin: 0;
+}
+
+#shopping_cart {
+    display: grid;
+    width: 120px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: #838383;
+    border: 1px solid #888888;
+    border-radius: 50px;
+    padding-left: 11px;
+    padding-right: 15px;
+
+}
+
+#shopping_cart p {
+    font-size: 14px;
+}
+
+#shopping_cart img {
+    justify-self: right;
+    width: 18px;
+    height: 18px;
+}
+
+main {
+    padding-left: 8%;
+    padding-right: 8%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    column-gap: 52px;
+    row-gap: 53px;
+}
+
+article {
+    display: grid;
+    grid: 370px 54px 38px / 1fr;
+    width: 320px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+article img {
+    object-fit: cover;
+    grid-column: 1/-1;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.Likeee {
+    width: 40px;
+    height: 40px;
+    justify-self: end;
+    margin-right: 21px;
+    margin-top: 13px;
+}
+
+.item_info {
+    display: grid;
+    align-items: center;
+    grid: 1fr / 1fr 1fr;
+}
+
+.item_info p {
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.price {
+    text-align: right;
+}
+
+.add_to_cart {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 1px solid #888888;
+    border-radius: 50px;
+
+    padding: 0px 12px 2px 12px;
+
+    align-items: center;
+}
+
+.add_to_cart p {
+    font-family: "Jura" sans-serif;
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.add_to_cart img {
+    grid-column: 2/3;
+    justify-self: end;
+    object-fit: scale-down;
+    width: 32px;
+    height: 21px;
+}
+
+
+footer {
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    height: 80px;
+    margin-top: 80px;
+    text-align: center;
+    vertical-align: middle;
+    color: #ABABAB;
+    background-color: #EDEDED;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
