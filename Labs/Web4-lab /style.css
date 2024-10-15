@@ -31,11 +31,27 @@ body {
     display: flex;
     flex-direction: row;
     justify-items: center;
+    align-items: center;
     margin: 10px;
 }
 
 #logo_img {
+    animation-name: ckw;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    animation-timing-function: linear;
+    display: inline-block;
     width: 15%;
+}
+
+@keyframes ckw {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 #logo_title {
@@ -131,6 +147,7 @@ h3 {
     border: 2px solid #EFF1F3;
     border-radius: 10px;
     width: auto;
+    max-width: 400px;
     margin: 15px;
     padding: 15px 15px 5px 15px;
 }
@@ -139,11 +156,28 @@ h3 {
     border: 3px solid;
     border-radius: 4px;
     width: 20%;
+    height: 0px;
     margin: 5px;
 }
 
 #task_color_1 {
     border-color: #175CD3;
+}
+
+.task_card.hovc1:hover{
+    background: linear-gradient(90deg, blue 0%, white 100%);
+}
+
+.task_card.hovc2:hover{
+    background: linear-gradient(90deg, green 0%, white 100%);
+}
+
+.task_card.hovc3:hover{
+    background: linear-gradient(90deg, red 0%, white 100%);
+}
+
+.task_card.hovc4:hover{
+    background: linear-gradient(90deg, purple 0%, white 100%);
 }
 
 #task_color_2 {
