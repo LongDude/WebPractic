@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Source Sans Pro';
+}
+
+
+:root {
+    --bg-color-primary: #f8f9fd;
+    --bg-color-secondary: #06255b;
+    --accent-color-primary: #FF7C40;
+    --accent-color-secondaty: #DA5D24;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    /* Высота между строками */
+    letter-spacing: 0.5; 
+}
+
+
+body {
+    background-color: #06255b;
+}
+
+header {
+    height: 92vh;
+    padding-top: 30px;
+
+    display: grid;
+    grid: 90px 1fr / 1fr;
+
+    background: 
+    linear-gradient(90deg, var(--bg-color-secondary) 0%, transparent 50%),
+    linear-gradient(180deg, var(--bg-color-secondary) 0%, transparent 50%),
+    url("img/aerial-view-cement-factory.png") 0px 0px / cover  no-repeat;
+    color: #FFFFFF;
+}
+
+
+.header-line {
+    display: grid;
+    width: 100%;
+    grid: 90px / minmax(270px, 430px) 2fr minmax(270px, 630px) 3fr minmax(310px, 330px);
+    align-items: center;
+    justify-items: center;
+
+}
+
+.header-line-logo {
+    align-self: self-start;
+    padding-top: 5px;
+}
+
+.header-menu{
+    display: grid;
+    grid-column: 3 / 4;
+    grid: 1fr / repeat(6, auto);
+    gap: 32px;
+    width: 100%;
+}
+
+
+.header-menu a{
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: center;    
+    color: #FFFFFF;
+}
+
+.header-contact {
+    display: grid;
+    grid-column: 5 / 6;
+    grid: 1fr / 1fr 1fr;
+}
+
+.header-contact button{
+    background-color: var(--accent-color-secondaty);
+    color: #FFFFFF;
+
+    font-weight: 600;
+    font-size: 0.9375rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.3px;
+
+    border: none;
+    width: 143px;
+    height: 56px;
+}
+
+.header-language{
+
+    display: grid;
+    grid: 1fr / repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    width: 170px;
+
+    padding-left: 5px;
+    padding-right: 10px;
+    background: #FFFFFF fixed;
+    color: black;
+}
+
+.header-language a {
+    color: var(--bg-color-secondary);
+    opacity: 40%;
+}
+
+.selected-language a {
+    opacity: 100%;
+    text-decoration: underline;
+}
+
+.header-language a img {
+    padding-right: 8px;
+}
+
+.header-banner {
+    position: relative;
+    display: grid;
+    grid: 14vh 36.2vh 1fr / 0.22fr 1.0fr 1.1fr;
+}
+
+.header-banner-card {
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+    grid:  140px auto auto 1fr /  1fr;
+}
+
+.header-banner-title {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 70.4px;
+    text-align: left;
+    letter-spacing: -1.3px;
+}
+
+.header-banner p{
+    grid-row-start: 3;
+    grid-row: auto;
+    font-size: 1.5625rem;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    align-self: top;
+}
+
+#parag1 {
+    padding-top: 27px;
+    width: 90%;
+}
+
+#parag2 {
+    padding-top: 27px;
+    width: 65%;
+}
+
+.header-banner-about-contact {
+    display: grid;
+    grid: auto / auto auto 1fr;
+    gap: 16px;
+    align-content: end;
+}
+
+.header-banner-about-contact * {
+    font-size: 0.98375rem;
+    line-height: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.3;
+    height: 51px;
+}
+
+.header-banner-about-contact #btn-serve {
+    background: rgba(6, 37, 91, 0.6);
+    color: #FFFFFF;
+    border: var(--bg-color-primary ) solid 2px;
+    width: 194px;
+}
+
+.header-banner-about-contact #btn-contact-us {
+    color: var(--bg-color-secondary);
+    width: 133px;
+}
+
+.bold-text{
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.header-banner-decorations {
+    position: relative;
+    grid-column: 3;
+    grid-row: 1/4;
+    transform: rotate(-45deg);
+}
+
+.header-banner-decorations * {
+    position: absolute;
+}
+
+.header-banner-decorations p{
+    display: grid;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+    
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 18.7px;
+    
+    transform: rotate(45deg);
+}
+
+.header-banner-decor-left {
+    position: relative;
+    height: 135px;
+    width: 135px;
+    left: 30%;
+    top: 19.7%;
+}
+
+.header-banner-decor-left #background-contour {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    height: 90%;
+    width: 90%;
+    opacity: 90%;
+    border: #DA5D24 solid 1px;
+}
+.header-banner-decor-left #foreground-contour {
+    position: absolute;
+    background-color: rgba(6, 37, 91, 0.8);
+    border: rgba(6, 37, 91, 1) solid 9px;
+    top: 0%;
+    height: 100%;
+    width: 100%;
+}
+
+.header-banner-decor-top {
+    position: relative;
+    height: 151px;
+    width: 151px;
+}
+
+.header-banner-decor-top #background-contour {
+    
+}
+
+.header-banner-decor-top #foreground-contour {
+
+}
+
+.header-banner-decor-bottom {
+    position: relative;
+
+}
+
+.header-banner-decor-right {
+    position: relative;
+    height: 145px;
+    width: 145px;
+    left: 50%;
+    top: 50%;
+}
+
+.header-banner-decor-right #background-contour {
+    position: absolute;
+
+}
