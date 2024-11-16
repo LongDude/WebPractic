@@ -6,6 +6,9 @@
     font-family: 'Source Sans Pro';
 }
 
+html {
+    overflow-x: hidden;
+}
 
 :root {
     --bg-color-primary: #f8f9fd;
@@ -18,14 +21,15 @@
 a {
     text-decoration: none;
     color: white;
-
     /* Высота между строками */
     letter-spacing: 0.5; 
 }
 
 
 body {
+    max-width: 100vw;
     background-color: #06255b;
+    overflow-y: scroll;
 }
 
 header {
@@ -133,7 +137,7 @@ header {
     display: grid;
     grid-row: 2;
     grid-column: 2;
-    grid:  140px auto auto 1fr /  1fr;
+    grid:  minmax(140px, 0.5fr) auto auto 1fr /  1fr;
 }
 
 .header-banner-title {
@@ -230,17 +234,15 @@ header {
     top: 19.7%;
 }
 
-.header-banner-decor-left #background-contour {
-    position: absolute;
+.header-banner-decor-left .decor-background-contour {
     top: -10%;
     left: -10%;
     height: 90%;
     width: 90%;
     opacity: 90%;
-    border: #DA5D24 solid 1px;
+    border: #FF7C40 solid 1px;
 }
-.header-banner-decor-left #foreground-contour {
-    position: absolute;
+.header-banner-decor-left .decor-foreground-contour {
     background-color: rgba(6, 37, 91, 0.8);
     border: rgba(6, 37, 91, 1) solid 9px;
     top: 0%;
@@ -250,32 +252,74 @@ header {
 
 .header-banner-decor-top {
     position: relative;
-    height: 151px;
-    width: 151px;
+    height: 161px;
+    width: 161px;
+    top:5%;
+    left:60%;
 }
 
-.header-banner-decor-top #background-contour {
-    
+.header-banner-decor-top .decor-background-contour {
+    border: #FFFFFF solid 1px;
+    height: 95%;
+    width: 95%;
+    top: -10%;
+    left: 15%;
 }
 
-.header-banner-decor-top #foreground-contour {
+.header-banner-decor-top .decor-foreground-contour {
+    background-color: rgba(6, 37, 91, 0.8);
+    height: 100%;
+    width: 100%;
+    border: #FFFFFF solid 8px;
 
 }
 
 .header-banner-decor-bottom {
     position: relative;
+    height: 186px;
+    width: 186px;
+    top: 11.5%;
+    left: 30%
+}
+
+.header-banner-decor-bottom .decor-background-contour {
+    border: #FFFFFF solid 1px;
+    height: 95%;
+    width: 95%;
+    top: 12.1%;
+    left: -9%;
+}
+
+.header-banner-decor-bottom .decor-foreground-contour {
+    background-color: rgba(6, 37, 91, 0.8);
+    height: 100%;
+    width: 100%;
+    border: #DA5D24 solid 8px;
 
 }
 
 .header-banner-decor-right {
-    position: relative;
-    height: 145px;
-    width: 145px;
-    left: 50%;
-    top: 50%;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    left: 65%;
+    top: 52%;
 }
 
-.header-banner-decor-right #background-contour {
-    position: absolute;
+.header-banner-decor-right #background-contour-1 {
+    border: #DA5D24 solid 1px;
+    height: 100%;
+    width: 100%;
+}
 
+.header-banner-decor-right #background-contour-1 {
+    height: 100%;
+    width: 100%;
+
+}
+
+.header-banner-decor-right .decor-foreground-contour {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(218, 93, 36, 0.8);
 }
