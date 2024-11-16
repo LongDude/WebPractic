@@ -8,6 +8,9 @@
 
 html {
     overflow-x: hidden;
+    overflow-y: scroll;
+    /* max-width: 100%; */
+    width: 100vw;
 }
 
 :root {
@@ -27,13 +30,11 @@ a {
 
 
 body {
-    max-width: 100vw;
-    background-color: #06255b;
-    overflow-y: scroll;
+    background-color: #f8f9fd;
 }
 
 header {
-    height: 92vh;
+    height: 91.5vh;
     padding-top: 30px;
 
     display: grid;
@@ -50,7 +51,7 @@ header {
 .header-line {
     display: grid;
     width: 100%;
-    grid: 90px / minmax(270px, 430px) 2fr minmax(270px, 630px) 3fr minmax(310px, 330px);
+    grid: 90px / minmax(270px, 430px) 2.1fr minmax(270px, 630px) 3fr minmax(310px, 330px);
     align-items: center;
     justify-items: center;
 
@@ -230,7 +231,7 @@ header {
     position: relative;
     height: 135px;
     width: 135px;
-    left: 30%;
+    left: 29.5%;
     top: 19.7%;
 }
 
@@ -254,8 +255,8 @@ header {
     position: relative;
     height: 161px;
     width: 161px;
-    top:5%;
-    left:60%;
+    top:4.8%;
+    left:59.8%;
 }
 
 .header-banner-decor-top .decor-background-contour {
@@ -281,6 +282,9 @@ header {
     top: 11.5%;
     left: 30%
 }
+.header-banner-decor-bottom {
+    letter-spacing: 0.1rem;
+}
 
 .header-banner-decor-bottom .decor-background-contour {
     border: #FFFFFF solid 1px;
@@ -295,7 +299,6 @@ header {
     height: 100%;
     width: 100%;
     border: #DA5D24 solid 8px;
-
 }
 
 .header-banner-decor-right {
@@ -306,20 +309,202 @@ header {
     top: 52%;
 }
 
-.header-banner-decor-right #background-contour-1 {
+/* section services */
+
+.section-services {
+    position: relative;
+    height: 120vh;
+}
+
+.section-services-bg-decorations {
+    position: relative;
+    width: 100%;
+    height: 0%;
+}
+
+.section-services-bg-decorations #section-services-dark-rect {
+    position: absolute;
+    background: #06255b;
+    height: 101.2vh;
+    width: 100vw
+}
+
+.section-services-bg-decorations #section-services-bg-rect-1 {
+    position: absolute;
+    width: 141vw;
+    height: 141vw;
+    rotate: -45deg;
+    translate: 20.6% -3.5%;
+    background: rgba(255, 255, 255, 1);
+}
+
+.section-services-bg-decorations #section-services-bg-rect-2 {
+    position: absolute;
+    background: rgba(247, 249, 252, 1);
+    top: 2.6%;
+    left: 68.3%;
+    width: 40vw;
+    height: 40vw;
+}
+
+.setcion-services-bg-top-rectangles {
+    position: absolute;
+    top: -7%;
+    left: 89.5%;
+
+    height: 20%;
+    width: 20%
+}
+
+.setcion-services-bg-top-rectangles * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.setcion-services-bg-top-rectangles #background-contour-1 {
     border: #DA5D24 solid 1px;
-    height: 100%;
-    width: 100%;
+    top: -3%;
+    left: 4%;
 }
 
-.header-banner-decor-right #background-contour-1 {
-    height: 100%;
-    width: 100%;
-
+.setcion-services-bg-top-rectangles #background-contour-2 {
+    position: absolute;
+    border: #FFFFFF solid 1px;
+    top: 4%;
+    left: -4%
 }
 
-.header-banner-decor-right .decor-foreground-contour {
-    height: 100%;
-    width: 100%;
+.setcion-services-bg-top-rectangles #fg-contour {
     background-color: rgba(218, 93, 36, 0.8);
+}
+
+.section-services-about {
+    position: relative;
+    left: 16.6%;
+    top: 9.3%;
+    width: 22%;
+}
+
+.section-services-about h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+}
+
+.section-services-about p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+    padding-top: 6%;
+}
+
+.section-services-grid {
+    position: absolute;
+    display: grid;
+    grid: repeat(3, 1fr) / repeat(4, 1fr); 
+    row-gap: 6%;
+    column-gap: 3.4%;
+    rotate: -45deg;
+    top: 11%;
+    left: 15.7%;
+}
+
+.section-services-grid-item:nth-child(n+2) {
+    grid-row: 2;
+}
+
+.section-services-grid-item:nth-child(n+6){
+    
+    grid-row: 3;
+    grid-column: 3;
+}
+
+.section-services-grid .section-services-grid-item {
+    display: grid;
+    width: 260px;
+    height: 260px;
+    background: #FFFFFF;
+    border: #06255b solid 1px;
+
+}
+.section-services-grid .container {
+    align-content: center;
+    rotate: 45deg;
+}
+
+.section-services-grid p {
+    position: absolute;
+    top: 50%;
+    left: 50%;    
+    translate: -50% -50%;
+    width: 200px;
+    text-wrap: wrap;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    letter-spacing: 0.8px;
+    color: rgba(49, 49, 49, 1);
+}
+
+.section-services-grid-item img {
+    display: block;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    translate: -50% -50%;
+    top: 65%;
+    left: 50%;
+}
+
+.section-services #section-services-bg-formule-1 {
+    position: absolute;
+    mix-blend-mode: darken;
+    rotate: 45deg;
+    left: 15%;
+    top: 22%;
+}
+
+.section-services #section-services-bg-formule-2 {
+    position: absolute;
+    mix-blend-mode: darken;
+    rotate: 45deg;
+    left: 5.3%;
+    top: 6.9%;
+}
+
+.section-services #section-services-bg-image {
+    position: absolute;
+    width: 42%;
+    bottom: 8.9%;
+    right: 9.6%;
+}
+
+.section-services .section-services-scroll {
+    display: grid;
+    grid: 1fr 1.4fr / 1fr;
+
+    align-items: center;
+    justify-items: center;
+
+    position: absolute;
+
+    translate: -50%;
+    bottom: 3.7%;
+    left: 50%;
+}
+
+.section-services .section-services-scroll p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    letter-spacing: 0.4px;
+    width: 55%;
+    color: rgba(83, 86, 90, 1);
 }
