@@ -4,6 +4,7 @@
     box-sizing: border-box;
 
     font-family: 'Source Sans Pro';
+    z-index: 0;
 }
 
 html {
@@ -336,6 +337,7 @@ header {
     rotate: -45deg;
     translate: 20.6% -3.5%;
     background: rgba(255, 255, 255, 1);
+    z-index: 0;
 }
 
 .section-services-bg-decorations #section-services-bg-rect-2 {
@@ -507,4 +509,354 @@ header {
     letter-spacing: 0.4px;
     width: 55%;
     color: rgba(83, 86, 90, 1);
+}
+
+
+/* SECTION */
+.section-know-how {
+    display: grid;
+    position: relative;
+    padding-top: 7vh;
+}
+
+.section-know-how-title {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+}
+
+.section-know-how-title h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    width: 30%;
+}
+
+.section-know-how-title p {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.3px;
+    padding-top: 25px;
+    width: 25%;
+
+}
+
+.section-know-how-expirience-grid {
+    display: grid;
+    grid: auto / repeat(6, 1fr);
+    justify-items: center;
+    padding-top: 6.4vh;
+    height: 50.3vh;
+    background: url("img/Group\ 2364.svg") no-repeat 100% 100%;
+}
+
+.section-know-how-expirience-grid article {
+    position: relative;
+    display: grid;
+    grid-template-rows: 49% 20%;
+    padding-top: 19%;
+    width: 100%;
+    height: 100%;
+    border: rgba(226, 226, 226, 1) solid 1px;
+    padding-left: 13%;
+}
+
+.section-know-how-expirience-grid article:nth-child(n+2) {
+    padding-left: 14%;
+}
+
+.section-know-how-expirience-grid article .container{
+    width: 100%;
+}
+
+.section-know-how-expirience-grid article .container h2{
+    font-family: 'Mulish';
+    font-weight: 800;
+    font-size: 1.0625rem;
+    line-height: 1.0625rem;
+    letter-spacing: 0.3px;
+    color: #DA5D24;
+}
+
+.section-know-how-expirience-grid article .container .vector-img-1{
+    position: relative;
+    background: url("img/vector-plus.svg") 100% / cover no-repeat;
+    height: 18px;
+    width: 18px;
+    left: 8%;
+}
+
+.section-know-how-expirience-grid article h3 {
+    font-family: 'Mulish';
+    font-weight: 800;
+    line-height: 1.0625rem;
+    font-size: 1.0625rem;
+    letter-spacing: 0.3px;
+    width: 90%;
+}
+
+.section-know-how-expirience-grid article:hover {
+    background: url("img/image\ 89.png") 100% / cover no-repeat;
+    cursor: pointer;
+    box-shadow: 0px 15px 90px 0px rgba(19, 47, 79, 0.25);
+    text-shadow: -0.4px 0.4px 2px black, 0 0 0em transparent;
+
+}
+
+.section-know-how-expirience-grid article:hover .container h2{
+    color: #FFFFFF;
+}
+
+
+.section-know-how-expirience-grid article:hover h3{
+    color: #FFFFFF;
+    text-shadow: -0.4px 0.4px 2px black, 0 0 0em transparent;
+
+}
+
+.section-know-how-expirience-grid article:hover .container .vector-img-1{
+    background: url("img/Vector\ \(2\).svg") 100% / cover no-repeat;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* section */
+
+.section-projects {
+    position: relative;
+    padding-top: 9.6%;
+    width: 100vw;
+    height: 98vh;
+}
+
+.section-projects-cycle {
+    display: grid;
+    gap: 2%;
+    grid-template-columns: 34% 32% 32%;
+    padding: 0% 13% 0% 8.4%;
+}
+
+.section-projects-cycle h1 {
+    width: 85%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+}
+.section-projects-cycle p {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.3px;
+}
+
+.section-projects-examples {
+    position: inherit;
+    padding-top: 5%;
+
+}
+
+.section-projects-examples menu {
+    position: absolute;
+    z-index: 2;
+    right: 8.5%;
+    display: grid;
+    grid-template-columns: 23% 17% 16% 16% 20%;
+    width: 58.2vw;
+    height: 14vh;
+    padding-top: 1%;
+    padding-left: 2.3%;
+    padding-bottom: 1%;
+
+    column-rule: 4px dashed rgba(168, 172, 173, 1);
+    column-gap: 21px;
+    column-rule-width: 1px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px 0px rgba(6, 37, 91, 0.06);
+}
+
+.section-projects-examples menu input[type=radio] {
+    all: unset;
+    display: none;
+}
+
+.section-projects-examples menu .container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 40% auto;
+    padding-left: 21px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.section-projects-examples menu .container:nth-child(n+2) {
+    border-left: 2px dashed rgba(168, 172, 173, 1);
+}
+
+.section-projects-examples menu .container-number{
+    position: relative;
+}
+
+.section-projects-examples menu .container-number h1{
+    color: rgba(168, 172, 173, 1);
+    font-weight: 700;
+    font-size: 1.0625rem;
+    line-height: 1.0625rem;
+}
+
+.section-projects-examples menu .vector-img{
+    position: relative;
+    left: 10%;
+    top: -5%;
+    background: url("img/know-how-vector-unselected.svg") 100% / cover no-repeat;
+    width: 17px;
+    height: 17px;
+}
+
+.section-projects-examples menu p{
+font-size: 1.25rem;
+font-weight: 200;
+line-height: 1.0625rem;
+letter-spacing: -0.8px;
+text-align: left;
+color: rgba(168, 172, 173, 1);
+}
+
+.section-projects-examples menu input[type="radio"]:checked + .container-number h1{
+    color: rgba(47, 48, 52, 1);
+}
+
+.section-projects-examples menu input[type="radio"]:checked + .container-number .vector-img{
+    background: url("img/know-how-vector-selected.svg") 100% / cover no-repeat;
+}
+
+.section-projects-examples menu input[type="radio"]:checked ~ p {
+    font-weight: 700;
+    color: rgba(47, 48, 52, 1)
+}
+
+.section-projects-examples-grid {
+    position: relative;
+    display: grid;
+    grid: 40.7% auto / 70.6% auto;
+    padding-left: 8.2%;
+    height: 49.6vh;
+    width: 85vw;
+    z-index: 1;
+}
+
+.section-projects-examples-grid .building_img {
+    background: url("img/20170926_114031\ 1.png") 100% / cover no-repeat;
+    grid-row: 1 / 3;
+}
+
+.section-projects-examples-about {
+    display: grid;
+    padding-top: 5.8%;
+    padding-left: 5.3%;
+    grid-template-rows: 43% auto;
+}
+
+.section-projects-examples-about h1 {
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.3px;
+}
+
+.section-projects-examples-about p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3125rem;
+    letter-spacing: 0.3px;
+    width: 90%;
+}
+
+.section-project-examples-buttons {
+    display: grid;
+    align-items: end;
+}
+
+.paired-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 142px;
+}
+
+.paired-buttons * {
+    all: unset;
+    width: 72px;
+    height: 72px;
+}
+
+.paired-buttons .button-left {
+    background: 
+    url("img/arrow-white.svg") center center / 10% no-repeat,
+    rgba(6, 37, 91, 1);
+}
+
+.paired-buttons .button-right {
+    background: 
+    url("img/arrow-white.svg") center center / 10% no-repeat,
+    rgba(218, 93, 36, 1);
+    rotate: 180deg;
+}
+
+.paired-buttons .button-left:hover {
+    background: 
+    url("img/arrow-white.svg") center center / 10% no-repeat,
+    rgba(29, 74, 153, 1);
+    cursor: pointer;
+}
+
+.paired-buttons .button-right:hover {
+    background: 
+    url("img/arrow-white.svg") center center / 10% no-repeat,
+    rgba(186, 78, 29, 1);
+    rotate: 180deg;
+    cursor: pointer;
+}
+
+/* SECTION PARTNERS */
+.section-partners {
+    position: relative;
+    height: 100vh;
+    padding-top: 1.4vh;
+    padding-left: 8vw;
+}
+
+.section-partners h1 {
+    width: 25%;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: -0.2px;
+    padding-left: 0.4%;
+}
+
+.section-partners-list {
+    display: grid;
+    grid-template-columns: 16px 22% 22.7% 22.7% 22% 16px;
+    padding-left: 0.1%;
+    padding-top: 0.4%;
+    width: 100%;
+    height: 16vh;
+}
+
+.section-partners-list #arrow-left {
+    width: 100%;
+    background: url("img/arrow-partners-base.svg") center center / 70% no-repeat;
+}
+.section-partners-list-item:nth-child(2) {
+    background: url("img/cemex_logo.png") 29.5% center / 40% no-repeat;
+}
+.section-partners-list-item:nth-child(3) {
+    background: url("img/zementwerk_logo.png") 32.5% 47.2% / 40% no-repeat;
+}
+.section-partners-list-item:nth-child(4) {
+    background: url("img/buzzi_logo.png") 33% 56.5% / 40% no-repeat;
+}
+.section-partners-list-item:nth-child(5) {
+    background: url("img/thomas_logo.png") 34% 53% / 40% no-repeat;
 }
